@@ -1,0 +1,423 @@
+body,
+#app {
+  height: 100vh;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Microsoft YaHei';
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+* {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0); }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#Login,
+#signin,
+#forgetPwd,
+#Donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  #Login > .logo,
+  #signin > .logo,
+  #forgetPwd > .logo,
+  #Donate > .logo {
+    width: 2.66667rem;
+    height: 2.66667rem; }
+    #Login > .logo img,
+    #signin > .logo img,
+    #forgetPwd > .logo img,
+    #Donate > .logo img {
+      height: 100%;
+      width: 100%; }
+  #Login main,
+  #signin main,
+  #forgetPwd main,
+  #Donate main {
+    padding: 1.2rem 1.13333rem 1.13333rem 1.13333rem; }
+    #Login main > form,
+    #signin main > form,
+    #forgetPwd main > form,
+    #Donate main > form {
+      text-align: center; }
+      #Login main > form input:-webkit-autofill,
+      #signin main > form input:-webkit-autofill,
+      #forgetPwd main > form input:-webkit-autofill,
+      #Donate main > form input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px #fff inset; }
+      #Login main > form input,
+      #signin main > form input,
+      #forgetPwd main > form input,
+      #Donate main > form input {
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        outline: 0 !important;
+        border-radius: 0.58667rem;
+        height: 1.17333rem;
+        width: calc(100% - 0.4rem);
+        margin-bottom: 0.26667rem;
+        background-color: #fff;
+        padding-left: 0.4rem;
+        border: none;
+        color: #000;
+        position: relative;
+        z-index: 0;
+        font-size: 0.37333rem;
+        border: 0.02667rem solid #ddd; }
+      #Login main > form > div,
+      #signin main > form > div,
+      #forgetPwd main > form > div,
+      #Donate main > form > div {
+        padding: 0.2rem 0.46667rem;
+        color: #EE0185;
+        display: flex;
+        justify-content: space-between; }
+        #Login main > form > div span:nth-child(2),
+        #signin main > form > div span:nth-child(2),
+        #forgetPwd main > form > div span:nth-child(2),
+        #Donate main > form > div span:nth-child(2) {
+          padding-left: 1.33333rem; }
+        #Login main > form > div input[type=checkbox],
+        #signin main > form > div input[type=checkbox],
+        #forgetPwd main > form > div input[type=checkbox],
+        #Donate main > form > div input[type=checkbox] {
+          display: none; }
+        #Login main > form > div input[type=checkbox] + label,
+        #signin main > form > div input[type=checkbox] + label,
+        #forgetPwd main > form > div input[type=checkbox] + label,
+        #Donate main > form > div input[type=checkbox] + label {
+          background-color: white;
+          border-radius: 50%;
+          border: 1px solid #587BF8;
+          width: 0.4rem;
+          height: 0.4rem;
+          display: inline-block;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 0.26667rem;
+          margin-bottom: 0.06667rem;
+          margin-right: 0.26667rem;
+          position: relative; }
+        #Login main > form > div input[type=checkbox]:checked + label,
+        #signin main > form > div input[type=checkbox]:checked + label,
+        #forgetPwd main > form > div input[type=checkbox]:checked + label,
+        #Donate main > form > div input[type=checkbox]:checked + label {
+          background-color: #fff; }
+        #Login main > form > div input[type=checkbox]:checked + label:after,
+        #signin main > form > div input[type=checkbox]:checked + label:after,
+        #forgetPwd main > form > div input[type=checkbox]:checked + label:after,
+        #Donate main > form > div input[type=checkbox]:checked + label:after {
+          content: "";
+          position: absolute;
+          top: 0.10667rem;
+          left: 0.10667rem;
+          right: 0.10667rem;
+          bottom: 0.10667rem;
+          border-radius: 50%;
+          background: #587BF8; }
+      #Login main > form > button,
+      #signin main > form > button,
+      #forgetPwd main > form > button,
+      #Donate main > form > button {
+        width: 100%;
+        height: 1.17333rem;
+        background: #EB1685;
+        background-blend-mode: normal, normal;
+        border-radius: 0.58667rem;
+        border: none;
+        font-size: 0.4rem;
+        font-weight: normal;
+        font-stretch: normal;
+        outline: none;
+        color: #fff;
+        margin-bottom: 0.48rem;
+        margin-top: 0.48rem; }
+
+#signin .picker .picker-items,
+#forgetPwd .picker .picker-items,
+#Donate .picker .picker-items {
+  width: 10rem;
+  text-align: center !important; }
+
+#signin .picker-item.picker-selected,
+#forgetPwd .picker-item.picker-selected,
+#Donate .picker-item.picker-selected {
+  font-size: 0.66667rem !important; }
+
+#signin > .logo,
+#forgetPwd > .logo,
+#Donate > .logo {
+  margin-top: 0.66667rem; }
+
+#signin main,
+#forgetPwd main,
+#Donate main {
+  padding: 1.2rem 1.13333rem 0rem 1.13333rem; }
+  #signin main form,
+  #forgetPwd main form,
+  #Donate main form {
+    position: relative; }
+    #signin main form > .bt,
+    #forgetPwd main form > .bt,
+    #Donate main form > .bt {
+      margin: 0;
+      font-size: 0.37333rem;
+      z-index: 1;
+      position: absolute;
+      right: 0.2rem;
+      height: 1.17333rem;
+      width: 1.33333rem;
+      color: #EE0185;
+      background: none; }
+
+#Record {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll; }
+  #Record > .recordBox {
+    margin: 0 0.66667rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-bottom: 0.01333rem solid #ddd;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem; }
+    #Record > .recordBox .recordImg {
+      margin-right: 0.4rem;
+      width: 1.86667rem;
+      height: 1.86667rem; }
+      #Record > .recordBox .recordImg img {
+        border-radius: 0.13333rem;
+        width: 100%;
+        height: 100%; }
+    #Record > .recordBox .recordText {
+      line-height: 0.66667rem;
+      width: 6.66667rem; }
+      #Record > .recordBox .recordText div {
+        margin: 0;
+        width: 100%;
+        display: flex; }
+        #Record > .recordBox .recordText div h3 {
+          font-size: 0.37333rem;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #4f4e4e;
+          margin-right: 2.66667rem; }
+        #Record > .recordBox .recordText div p {
+          text-align: center; }
+        #Record > .recordBox .recordText div .p1 {
+          color: #000; }
+        #Record > .recordBox .recordText div .p2 {
+          color: #ed5e5e;
+          font-size: 0.53333rem; }
+          #Record > .recordBox .recordText div .p2 > span:nth-child(1) {
+            -webkit-animation: jump 1s linear 0s infinite alternate; }
+          #Record > .recordBox .recordText div .p2 span:nth-child(2) {
+            -webkit-animation: jump 1s linear 0.2s infinite alternate; }
+          #Record > .recordBox .recordText div .p2 span:nth-child(3) {
+            -webkit-animation: jump 1s linear 0.4s infinite alternate; }
+
+@-webkit-keyframes jump {
+  0% {
+    top: 0px;
+    color: #ddd; }
+  50% {
+    /* left:-1px; */
+    top: 0px;
+    color: #000; }
+  100% {
+    /* left:2px */
+    top: 0px;
+    color: #ddd; } }
+        #Record > .recordBox .recordText div .p3 {
+          color: #319121; }
+      #Record > .recordBox .recordText p {
+        font-size: 0.32rem;
+        color: #787878; }
+        #Record > .recordBox .recordText p span {
+          color: #ed5e5e; }
+      #Record > .recordBox .recordText > p:nth-of-type(2) {
+        font-size: 0.26667rem; }
+  #Record > .recordBox:last-child {
+    margin-bottom: 0.66667rem; }
+  #Record .loading {
+    text-align: center;
+    color: #EB1685; }
+    #Record .loading .iconfont {
+      font-size: 1.33333rem;
+      display: inline-block;
+      animation: 1s rotate linear infinite; }
+    #Record .loading p {
+      font-size: 0.32rem;
+      color: rgba(0, 0, 0, 0.4);
+      padding: 0.4rem 0; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  #Record .return {
+    position: fixed;
+    bottom: 0.66667rem;
+    right: 0.8rem; }
+    #Record .return p {
+      background: #EB1685;
+      width: 1.33333rem;
+      height: 1.33333rem;
+      line-height: 1.33333rem;
+      border-radius: 50%;
+      text-align: center;
+      margin-bottom: 0.26667rem; }
+      #Record .return p .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 0.8rem;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.02667rem;
+        -moz-osx-font-smoothing: grayscale;
+        color: #fff; }
+
+.noTextBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .noTextBox .noText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.66667rem; }
+    .noTextBox .noText input {
+      -web-kit-appearance: none;
+      -moz-appearance: none;
+      outline: 0;
+      border-radius: 0.58667rem;
+      height: 1.17333rem;
+      background-color: #fff;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+      border: none;
+      color: #000;
+      position: relative;
+      z-index: 0;
+      font-size: 0.48rem;
+      text-align: left;
+      position: relative; }
+    .noTextBox .noText input::-webkit-input-placeholder {
+      color: #EE0185;
+      font-size: 0.48rem;
+      padding-left: 0.66667rem; }
+    .noTextBox .noText p {
+      text-align: center;
+      color: #787878;
+      font-size: 0.42667rem;
+      padding: 0.04rem 0; }
+    .noTextBox .noText img {
+      width: 2rem;
+      height: 100%; }
+
+.noTextRecord {
+  top: 30%; }
+
+/*
+#Donate {
+ 
+  .picker .picker-items {
+    width: px(750);
+    text-align: center !important;
+  }
+  .header {
+    width: px(750);
+    height: px(240);
+    margin-top: px(30);
+    img {
+      width: px(750);
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  main {
+    padding: px(95);
+    background-color: #f6f6f6;
+    >form {
+      text-align: center;
+      input {
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        outline: 0 !important;
+        border-radius: px(44);
+        height: px(88);
+        width: calc(100% - 0.4rem);
+        margin-bottom: px(36);
+        background-color: #fff;
+        padding-left: px(30);
+        border: none;
+        color: #000;
+        position: relative;
+        z-index: 0;
+        font-size: px(28);
+      }
+      input:nth-child(5) {
+        background: rgba(0, 0, 0, .06);
+      }
+      >span {
+        font-size: px(28);
+        z-index: 1;
+        position: absolute;
+        right: px(130);
+        height: px(88);
+        line-height: px(88);
+        color: #f36060;
+      }
+      >button {
+        width: px(560);
+        height: px(88);
+        background-image: linear-gradient(127deg, rgba(246, 244, 95, 0.85) 0%, rgba(241, 167, 93, 0.5) 15%, rgba(237, 94, 94, 0.9) 100%), linear-gradient( #f17272, #f17272);
+        background-blend-mode: normal, normal;
+        border-radius: px(44);
+        border: none;
+        font-size: px(30);
+        font-weight: normal;
+        font-stretch: normal;
+        outline: none;
+        color: #fff;
+        margin-bottom: px(36);
+      }
+    }
+  }
+}
+*/
+.shade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+  z-index: 9; }
+
+.offSelect {
+  text-align: right;
+  font-size: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0.53333rem;
+  color: green; }
+  .offSelect > p:nth-child(1) {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left; }
